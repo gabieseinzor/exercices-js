@@ -1,0 +1,15 @@
+#error-message {
+  color: red;
+  min-height: 20px;
+}
+
+#tags-list {
+  display: flex;
+  gap: 8px;
+}
+
+.tag {
+  background: #cad2df;
+  padding: 4px 12px;
+  border-radius: 16px;
+}
