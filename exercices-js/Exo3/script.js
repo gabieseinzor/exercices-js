@@ -31,13 +31,14 @@ addButton.addEventListener("click", function (event) {
 
     // 4. pastilles mises à jour
     tagsContainer.textContent = "";
-    const pills = tagList.map(function (tag) {
-      const pill = document.createElement("div");
-      pill.classList.add("tag");
-      pill.textContent = tag;
-      return pill;
+    const tagBadges = tagList.map(function (tag) {
+      // pour chaque texte du tableau...
+      const tagBadge = document.createElement("div"); // je crée un div
+      tagBadge.classList.add("tag"); // je lui donne le style .tag
+      tagBadge.textContent = tag; // je mets le texte dedans
+      return tagBadge; // je le renvoie dans le nouveau tableau
     });
-    tagsContainer.append(...pills);
+    tagsContainer.append(...tagBadges); // je pose tous les badges dans la page avec un spread
 
     // texte du bas
     tagsText.textContent = "Tags : " + tagList.join(", ");
