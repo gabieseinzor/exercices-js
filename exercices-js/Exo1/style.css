@@ -1,0 +1,7 @@
+ #notif-btn{
+    width: 80px;
+    background-color: green;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+ }
